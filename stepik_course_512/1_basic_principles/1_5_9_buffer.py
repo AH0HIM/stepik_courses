@@ -36,3 +36,20 @@ buf.get_current_part() # вернуть [1]
 
 https://stepik.org/lesson/24461/step/9?unit=6767
 """
+
+
+class Buffer:
+    def __init__(self):
+        self.buffer = []
+
+    def add(self, *a):
+        self.buffer += a
+        while len(self.buffer) >= 5:
+            result = 0
+            for i in range(len(self.buffer[:5])):
+                result += self.buffer[i]
+            print(result)
+            self.buffer = self.buffer[5:]
+
+    def get_current_part(self):
+        return self.buffer

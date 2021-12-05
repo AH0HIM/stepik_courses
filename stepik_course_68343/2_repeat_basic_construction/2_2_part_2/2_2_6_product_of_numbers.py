@@ -18,4 +18,13 @@
 Примечание 2. Для решения задачи используйте вложенные циклы.
 https://stepik.org/lesson/415554/step/6?unit=405083
 """
+result = [int(input()) for i in range(int(input()))]
+num = int(input())
+flag = 'НЕТ'
+for i in range(len(result)):
+    for j in range(len(result)):
+        if i != j:
+            if result[i] * result[j] == num:
+                flag = 'ДА'
 
+print(flag)
