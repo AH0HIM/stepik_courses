@@ -21,6 +21,7 @@ https://stepik.org/lesson/415554/step/6?unit=405083
 result = [int(input()) for i in range(int(input()))]
 num = int(input())
 flag = 'НЕТ'
+
 for i in range(len(result)):
     for j in range(len(result)):
         if i != j:
