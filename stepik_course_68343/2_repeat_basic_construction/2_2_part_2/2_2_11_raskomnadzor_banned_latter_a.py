@@ -26,4 +26,3 @@ for i in alphabet:
         word = word.replace(i, '').replace('  ', ' ').strip()
         if len(word) < 1:
             break
-
