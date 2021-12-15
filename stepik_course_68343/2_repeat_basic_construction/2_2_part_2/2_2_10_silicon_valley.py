@@ -18,3 +18,16 @@
 
 https://stepik.org/lesson/415554/step/7?unit=405083
 """
+
+result = []
+
+for i in range(1, int(input()) + 1):
+    name = ['a', 'n', 't', 'o', 'n']
+    text = input()
+    for j in text:
+        if j == name[0]:
+            del name[0]
+        if len(name) == 0:
+            result.append(i)
+            break
+print(*result)
