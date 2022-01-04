@@ -1,12 +1,11 @@
 import os
-import os.path
 
-with open('sample_ans.txt', 'w') as ans:
-    for currentDir, dirs, files in os.walk('sample'):
+os.chdir('C:\\main')
+
+with open('2_4_6.txt', 'w') as out:
+    for currentDir, dirs, files in os.walk('main'):
         for file in files:
-            file.replace('\\', '/')
             if file.endswith('.py'):
-                ans.write(currentDir)
-                ans.repa
-                ans.write('\n')
+                out.write(currentDir)
+                out.write('\n')
                 break
