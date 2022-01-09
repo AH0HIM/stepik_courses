@@ -1,11 +1,12 @@
 import requests
+import re
 
-res = requests.get("https://docs.python.org/3.5/_static/py.png")
-print(res.status_code)
-print(res.headers['Content-Type'])
+url_a, url_b = input(), input()
+flag = False
 
-print(res.content)
 
-with open("python.png", "wb") as f:
-    f.write(res.content)
-# print(res.text)
+for url in re.findall(r'<a href="(.*)">', requests.get(url_a).text):
+    if url_b in re.findall(r'<a href="(.*)">', requests.get(url).text):
+        print('Yes')
+    else:
+        print('No')
