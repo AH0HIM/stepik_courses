@@ -48,12 +48,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 link = "http://suninjuly.github.io/simple_form_find_task.html"
-
 values = {
-    'first_name': 'Ilya',
-    'last_name': 'Ikonnikov',
-    'city': 'Kyiv',
-    'country': 'Ukraine'
+    "first_name": "Ilya",
+    "last_name": "Ikonnikov",
+    "city": "Kyiv",
+    "country": "Ukraine"
 }
 
 with webdriver.Chrome() as browser:
