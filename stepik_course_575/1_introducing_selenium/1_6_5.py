@@ -55,8 +55,7 @@ values = {
 
 with webdriver.Chrome() as browser:
     browser.get(url)
-    link = browser.find_element(By.PARTIAL_LINK_TEXT, decrypted_url)
-    link.click()
+    link = browser.find_element(By.PARTIAL_LINK_TEXT, decrypted_url).click()
 
     input_first_name = browser.find_element(By.TAG_NAME, "input[name='first_name']")
     input_first_name.send_keys(f"{values['first_name']}")
