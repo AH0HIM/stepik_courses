@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import Select
 
 link = "http://suninjuly.github.io/selects1.html"
 
-with webdriver.Chrome() as browser:
+with webdriver.Chrome(executable_path='C:\\chromedriver\\chromedriver.exe') as browser:
     browser.get(link)
 
     select = Select(browser.find_element(By.TAG_NAME, "select"))
