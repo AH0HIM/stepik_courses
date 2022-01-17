@@ -25,7 +25,6 @@ with webdriver.Chrome() as browser:
 
     # input_phone = browser.find_element(By.TAG_NAME, "input[placeholder='Input your phone:']")
     # input_phone.send_keys(get_random_line())
-    #
     # input_address = browser.find_element(By.TAG_NAME, "input[placeholder='Input your address:']")
     # input_address.send_keys(get_random_line())
 
