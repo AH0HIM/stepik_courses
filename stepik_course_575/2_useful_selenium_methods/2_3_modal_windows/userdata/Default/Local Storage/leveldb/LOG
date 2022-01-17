@@ -1,2 +1,3 @@
-2022/01/16-20:30:15.596 22fc Creating DB C:\Users\b3yond3r\PycharmProjects\stepik_courses\stepik_course_575\2_useful_selenium_methods\2_3_modal_windows\userdata\Default\Local Storage\leveldb since it was missing.
-2022/01/16-20:30:15.704 22fc Reusing MANIFEST C:\Users\b3yond3r\PycharmProjects\stepik_courses\stepik_course_575\2_useful_selenium_methods\2_3_modal_windows\userdata\Default\Local Storage\leveldb/MANIFEST-000001
+2022/01/17-10:12:20.675 54fc Reusing MANIFEST C:\Users\user\PycharmProjects\stepik_courses\stepik_course_575\2_useful_selenium_methods\2_3_modal_windows\userdata\Default\Local Storage\leveldb/MANIFEST-000001
+2022/01/17-10:12:20.679 54fc Recovering log #3
+2022/01/17-10:12:20.679 54fc Reusing old log C:\Users\user\PycharmProjects\stepik_courses\stepik_course_575\2_useful_selenium_methods\2_3_modal_windows\userdata\Default\Local Storage\leveldb/000003.log 
