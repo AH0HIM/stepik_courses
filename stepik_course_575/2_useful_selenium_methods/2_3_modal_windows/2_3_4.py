@@ -16,7 +16,6 @@ import time
 import math
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from sendToStepik import sendToStepik
 
 link = "http://suninjuly.github.io/alert_accept.html"
 task_link = "https://stepik.org/lesson/184253/step/4?unit=158843"
@@ -38,10 +37,4 @@ with webdriver.Chrome() as browser:
 
     browser.find_element(By.CSS_SELECTOR, "button.btn").click()
     time.sleep(5)
-    # alert = browser.switch_to.alert
-    # alert_text = alert.text
-    # alert.accept()
-    # answer = alert_text.split(': ')[-1]
-    # print(answer)
-    # time.sleep(2)
-    # sendToStepik(task_link, answer)
+
