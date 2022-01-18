@@ -38,5 +38,3 @@ def test_substring(full_string, substring):
     assert substring in full_string, \
         f"expected '{substring}' to be substring of '{full_string}'"
 
-
-print(test_substring("1", "1"))
