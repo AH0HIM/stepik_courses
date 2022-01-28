@@ -18,8 +18,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 link = "http://suninjuly.github.io/alert_accept.html"
-task_link = "https://stepik.org/lesson/184253/step/4?unit=158843"
-
 
 def calc(x):
     return str(math.log(abs(12 * math.sin(int(x)))))
