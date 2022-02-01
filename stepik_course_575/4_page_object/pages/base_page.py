@@ -42,7 +42,6 @@ class BasePage:
                 until(EC.presence_of_element_located((how, what)))
         except TimeoutException:
             return True
-
         return False
 
     def is_disappeared(self, how, what, timeout=4):
@@ -51,11 +50,26 @@ class BasePage:
                 until_not(EC.presence_of_element_located((how, what)))
         except TimeoutException:
             return False
+        return True
 
+    def input_text(self, how, what, text):
+        try:
+            element = self.browser(how, what)
+            element.send_keys(text)
+        except NoSuchElementException:
+            return False
         return True
 
     def open(self):
         self.browser.get(self.url)
+
+    def click_button(self, how, what):
+        try:
+            button = self.browser.find_element(how, what)
+            button.click()
+        except NoSuchElementException:
+            return False
+        return True
 
     def solve_quiz_and_get_code(self):
         alert = self.browser.switch_to.alert
@@ -73,3 +87,7 @@ class BasePage:
 
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
+
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), \
+            "User icon is not presented, probably unauthorised user"
