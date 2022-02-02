@@ -1,6 +1,5 @@
 import math
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from selenium.common.exceptions import NoAlertPresentException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, NoAlertPresentException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from .locators import BasePageLocators
@@ -54,7 +53,7 @@ class BasePage:
 
     def input_text(self, how, what, text):
         try:
-            element = self.browser(how, what)
+            element = self.browser.find_element(how, what)
             element.send_keys(text)
         except NoSuchElementException:
             return False
