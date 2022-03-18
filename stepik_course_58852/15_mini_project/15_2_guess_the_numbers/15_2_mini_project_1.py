@@ -5,7 +5,7 @@ num = 0
 
 
 def is_random_num():
-    return num == randint(1, int(input('Укажите граниченое значение: ')))
+    return num == randint(1, int(input('Укажите граничное значение: ')))
 
 
 def is_valid(s):

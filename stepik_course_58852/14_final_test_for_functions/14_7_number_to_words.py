@@ -29,7 +29,7 @@ def number_to_words(num):
     elif num % 10 == 0:
         return list_3[n % 100 // 10 - 2]
     else:
-        return list_3[n % 100 // 10 -2] + ' ' + list_1[n % 10 - 1]
+        return list_3[n % 100 // 10 - 2] + ' ' + list_1[n % 10 - 1]
 
 
 n = int(input())
